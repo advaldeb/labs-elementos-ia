@@ -45,6 +45,15 @@ Material práctico del curso **Elementos de Inteligencia Artificial**, dictado p
 - [ETS](06%20time%20series/15%20ETS.ipynb)
 - [Prophet](06%20time%20series/16%20Prophet.ipynb)
 
+### 3. Reinforcement Learning
+- TBD
+
+### 4. LLM
+- TBD
+
+### 5. Agentes
+- TBD
+
 ## Cómo usar este repositorio
 
 1. Abre el repositorio en JupyterLab o Visual Studio Code con soporte para notebooks.
