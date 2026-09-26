@@ -4,7 +4,7 @@ Material práctico del curso **Elementos de Inteligencia Artificial**, dictado p
 
 ## Laboratorios
 
-### Aprendizaje no supervisado
+### 1. Aprendizaje no supervisado
 
 #### Clustering
 
@@ -21,7 +21,7 @@ Material práctico del curso **Elementos de Inteligencia Artificial**, dictado p
 
 - [Laboratorio de segmentación de clientes](08%20customer-segmentaion/customer_segmentation.ipynb)
 
-### Aprendizaje supervisado y pronóstico
+### 2. Aprendizaje supervisado y pronóstico
 
 #### Modelos de regresión
 
