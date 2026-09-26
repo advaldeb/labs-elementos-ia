@@ -6,15 +6,44 @@ Material práctico del curso **Elementos de Inteligencia Artificial**, dictado p
 
 ### Aprendizaje no supervisado
 
-- [K-means](01%20clustering/01%20kmeans.ipynb), [clustering jerárquico](01%20clustering/02%20hierarchical.ipynb) y [mezclas gaussianas (GMM)](01%20clustering/03%20gmmclust.ipynb).
-- [Análisis de componentes principales (PCA)](02%20pca%20and%20fa/04%20pca.ipynb) y [análisis factorial (FA)](02%20pca%20and%20fa/05%20fa.ipynb).
-- [Segmentación de clientes](08%20customer-segmentaion/customer_segmentation.ipynb).
+#### Clustering
+
+- [K-means](01%20clustering/01%20kmeans.ipynb)
+- [Clustering jerárquico](01%20clustering/02%20hierarchical.ipynb)
+- [Mezclas gaussianas (GMM)](01%20clustering/03%20gmmclust.ipynb)
+
+#### Reducción de dimensionalidad
+
+- [Análisis de componentes principales (PCA)](02%20pca%20and%20fa/04%20pca.ipynb)
+- [Análisis factorial (FA)](02%20pca%20and%20fa/05%20fa.ipynb)
+
+#### Segmentación de clientes
+
+- [Laboratorio de segmentación de clientes](08%20customer-segmentaion/customer_segmentation.ipynb)
 
 ### Aprendizaje supervisado y pronóstico
 
-- [Regresión lineal](03%20regression/06%20regression.ipynb), [ridge](03%20regression/07%20regression%20ridge.ipynb), [lasso](03%20regression/08%20regression%20lasso.ipynb) y [elastic net](03%20regression/09%20regression%20elasticnet.ipynb).
-- [Árbol de regresión](04%20treemodels/10%20regressiontree.ipynb), [random forest](04%20treemodels/11%20randomforest.ipynb), [gradient boosting](04%20treemodels/12%20gbm.ipynb) y [XGBoost](04%20treemodels/13%20xgboost.ipynb).
-- Series temporales: [regresiones espurias](06%20time%20series/12%20regespuriats.ipynb), [rezagos distribuidos](06%20time%20series/13%20distributed%20lag%20model.ipynb), [Holt-Winters](06%20time%20series/14%20holt-winters.ipynb), [ETS](06%20time%20series/15%20ETS.ipynb) y [Prophet](06%20time%20series/16%20Prophet.ipynb).
+#### Modelos de regresión
+
+- [Regresión lineal](03%20regression/06%20regression.ipynb)
+- [Regresión ridge](03%20regression/07%20regression%20ridge.ipynb)
+- [Regresión lasso](03%20regression/08%20regression%20lasso.ipynb)
+- [Regresión elastic net](03%20regression/09%20regression%20elasticnet.ipynb)
+
+#### Modelos de regresión basados en árboles
+
+- [Árbol de regresión](04%20treemodels/10%20regressiontree.ipynb)
+- [Random forest](04%20treemodels/11%20randomforest.ipynb)
+- [Gradient boosting](04%20treemodels/12%20gbm.ipynb)
+- [XGBoost](04%20treemodels/13%20xgboost.ipynb)
+
+#### Series temporales
+
+- [Regresiones espurias](06%20time%20series/12%20regespuriats.ipynb)
+- [Modelo de rezagos distribuidos](06%20time%20series/13%20distributed%20lag%20model.ipynb)
+- [Holt-Winters](06%20time%20series/14%20holt-winters.ipynb)
+- [ETS](06%20time%20series/15%20ETS.ipynb)
+- [Prophet](06%20time%20series/16%20Prophet.ipynb)
 
 ## Cómo usar este repositorio
 
