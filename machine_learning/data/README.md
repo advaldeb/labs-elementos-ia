@@ -1,0 +1,16 @@
+# Catálogo de datos
+
+Los datos originales se conservan sin transformación. Los recursos descargados de terceros se clasifican en `external/`; `raw/` y `processed/` quedan disponibles para futuras entradas y derivados. Las rutas de lectura de notebooks se resuelven con `ml_course.data.get_data_path`.
+
+| Dataset | Ruta | Formato | Uso y variables principales | Fuente y transformaciones |
+|---|---|---|---|---|
+| Consumo y producción eléctrica | `external/electricity_consumption_and_production.csv` | CSV | Regresión, modelos basados en árboles, series de tiempo y notebook histórico Kaggle. Incluye `DateTime`, `Consumption`, `Production`, `Nuclear`, `Wind`, `Hydroelectric`, `Oil and Gas`, `Coal`, `Solar` y `Biomass`. | Recurso externo; la ruta de entrada Kaggle en el notebook legacy lo identifica como dataset horario de electricidad. Fuente editorial exacta no confirmada. El notebook convierte `DateTime` en índice temporal; el CSV original no se modifica. |
+| Calendario M5 | `external/m5_calendar.csv` | CSV | Calendario de la competencia M5; `date`, `wm_yr_wk`, `weekday`, `wday`, `month`, `year`, eventos y variables SNAP. No hay notebook actual que lo consuma. | Kaggle M5 Forecasting Accuracy. Se conserva sin transformación. |
+| Portafolio de ofertas Starbucks | `external/starbucks_portfolio.jsonl` | JSON Lines | Segmentación de clientes. Campos: `reward`, `channels`, `difficulty`, `duration`, `offer_type`, `id`. | Recurso externo presente junto al material de segmentación; fuente de descarga no indicada en los archivos. Leer cada línea como un registro. |
+| Perfil de clientes Starbucks | `external/starbucks_profile.jsonl` | JSON Lines | Segmentación de clientes. Campos: `gender`, `age`, `id`, `became_member_on`, `income`. | Recurso externo presente junto al material de segmentación; fuente de descarga no indicada en los archivos. Leer cada línea como un registro. |
+| Eventos de clientes Starbucks | **Falta:** `external/starbucks_transcript.jsonl` | JSON Lines esperado | El notebook de segmentación lo requiere. El código espera, entre otros, `person`, `time`, `value` y `event`. | No existe en el repositorio. No se generó ni se sustituyó; el notebook no puede completar la carga hasta que se restaure la fuente autorizada. |
+| Archivo `archive.zip` | `external/legacy/archive.zip` | ZIP vacío, 22 bytes | Archivo legacy de `03 regression/code/`. No contiene miembros. | Se conserva intacto; no se extrajo ni se eliminó. Contenido original desconocido porque el contenedor estaba vacío. |
+| Archivo M5 comprimido | `external/legacy/m5-forecasting-accuracy.zip` | ZIP vacío, 22 bytes | Archivo legacy del directorio de datos de regresión. No contiene miembros, por lo que no incluye los datos completos M5. | Se conserva intacto; no se extrajo ni se eliminó. |
+| FAQ de LLM Engineering | `../10 llm-eng/data/documents/faq.jsonl` | JSON Lines | Corpus local de los notebooks LLM de embeddings, retrieval y RAG. | Archivo docente mantenido dentro del subproyecto `10 llm-eng/`; no se ha duplicado en el catálogo ML. |
+
+No se encontraron archivos Excel o Parquet. Los resultados tabulares generados de LLM permanecen en `10 llm-eng/outputs/` y `10 llm-eng/data/outputs/`; no se clasifican como datasets fuente ni se mueven.
