@@ -1,0 +1,5 @@
+solicitud,esperada,seleccionada,seleccion_correcta,argumentos_validos,error
+cuanto es 18 por 4,calculadora,calculadora,True,True,
+busca mochila,busqueda_productos,busqueda_productos,True,True,
+donde esta mi paquete,busqueda_documentos,busqueda_documentos,True,True,
+temperatura de Santiago,clima_mock,busqueda_documentos,False,True,

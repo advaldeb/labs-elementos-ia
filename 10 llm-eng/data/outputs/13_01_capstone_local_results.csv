@@ -1,0 +1,4 @@
+id,request,prompt_version,route,expected_route,route_match,source_ids,retrieval_hit,schema_valid,response_quality,instruction_following,latency_seconds,input_tokens,output_tokens,estimated_cost,tool_accuracy,failure,error_type
+c1,devolucion 30 dias,capstone-v1,rag,rag,True,"['devolucion_plazo', 'devolucion_reembolso', 'envio_seguimiento']",1.0,True,1.0,1.0,0.0027959999861195683,,,,,False,
+c2,calcula 2 + 3,capstone-v1,tool,tool,True,[],,True,1.0,1.0,0.0018266999395564198,,,,True,False,
+c3,"hola, necesito ayuda",capstone-v1,direct,direct,True,[],,True,1.0,1.0,0.003013900015503168,,,,,False,

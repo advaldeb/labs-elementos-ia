@@ -1,0 +1,2 @@
+metodo,similitud_semantica_media,notas
+cosine_sobre_embeddings_ilustrativos,0.9873706239014525,Sustituye estos vectores por salidas del mismo encoder.

@@ -45,11 +45,40 @@ Material práctico del curso **Elementos de Inteligencia Artificial**, dictado p
 - [ETS](06%20time%20series/15%20ETS.ipynb)
 - [Prophet](06%20time%20series/16%20Prophet.ipynb)
 
-### 3. Reinforcement Learning
+### 3. Deep Learning
+
+### 4. Reinforcement Learning
 - TBD
 
 ### 4. LLM
-- TBD
+- [Curso LLM Engineering](10%20llm-eng/README.md)
+- [Configuración del entorno](10%20llm-eng/notebooks/00_setup/00_01_environment_setup.ipynb)
+- [Modelos multi-provider](10%20llm-eng/notebooks/00_setup/00_02_multi_provider_llm.ipynb)
+- [Tokens y ventana de contexto](10%20llm-eng/notebooks/01_llm_fundamentals/01_01_tokens_and_context.ipynb)
+- [Muestreo y generación](10%20llm-eng/notebooks/01_llm_fundamentals/01_02_sampling.ipynb)
+- [Fundamentos de prompts](10%20llm-eng/notebooks/02_prompt_engineering/02_01_prompt_basics.ipynb)
+- [Zero-shot y few-shot](10%20llm-eng/notebooks/02_prompt_engineering/02_02_zero_shot_few_shot.ipynb)
+- [Patrones de prompts e inyección](10%20llm-eng/notebooks/02_prompt_engineering/02_03_prompt_patterns.ipynb)
+- [Salidas estructuradas con Pydantic](10%20llm-eng/notebooks/03_structured_outputs/03_01_structured_outputs.ipynb)
+- [Validación y reintentos](10%20llm-eng/notebooks/03_structured_outputs/03_02_validation_and_retries.ipynb)
+- [Fundamentos de evaluación](10%20llm-eng/notebooks/04_evaluation/04_01_evaluation_basics.ipynb)
+- [Evaluación con LLM como juez](10%20llm-eng/notebooks/04_evaluation/04_02_llm_as_judge.ipynb)
+- [Comparación de modelos](10%20llm-eng/notebooks/04_evaluation/04_03_model_comparison.ipynb)
+- [Representaciones vectoriales y embeddings](10%20llm-eng/notebooks/05_embeddings/05_01_embeddings.ipynb)
+- [Búsqueda semántica manual](10%20llm-eng/notebooks/05_embeddings/05_02_semantic_search.ipynb)
+- [Chunking y metadatos](10%20llm-eng/notebooks/06_retrieval/06_01_chunking.ipynb)
+- [Evaluación de recuperación](10%20llm-eng/notebooks/06_retrieval/06_02_retrieval_evaluation.ipynb)
+- [RAG desde cero](10%20llm-eng/notebooks/07_rag/07_01_rag_from_scratch.ipynb)
+- [RAG con LangChain](10%20llm-eng/notebooks/07_rag/07_02_rag_langchain.ipynb)
+- [Function calling y ejecución de herramientas](10%20llm-eng/notebooks/08_tools/08_01_function_calling.ipynb)
+- [Router de herramientas](10%20llm-eng/notebooks/08_tools/08_02_tool_router.ipynb)
+- [Agente mínimo desde cero](10%20llm-eng/notebooks/09_agents/09_01_agent_from_scratch.ipynb)
+- [Fallos de agentes](10%20llm-eng/notebooks/09_agents/09_02_agent_failures.ipynb)
+- [Fundamentos de LangGraph](10%20llm-eng/notebooks/10_langgraph/10_01_langgraph_basics.ipynb)
+- [Workflow de agente con LangGraph](10%20llm-eng/notebooks/10_langgraph/10_02_agent_workflow.ipynb)
+- [Observabilidad con LangSmith](10%20llm-eng/notebooks/11_observability/11_01_llm_observability.ipynb)
+- [Agentic RAG con LangGraph](10%20llm-eng/notebooks/12_advanced_rag/12_01_agentic_rag.ipynb)
+- [Capstone: sistema LLM integrado](10%20llm-eng/notebooks/13_capstone/13_01_capstone.ipynb)
 
 ### 5. Agentes
 - TBD

@@ -1,0 +1,1 @@
+"""Prompts versionados y reutilizables para los laboratorios."""

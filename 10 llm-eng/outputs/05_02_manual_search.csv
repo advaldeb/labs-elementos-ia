@@ -1,0 +1,10 @@
+consulta_id,k,hit_rate,precision_at_k,recall_at_k,reciprocal_rank,primer_resultado
+q_envio,1,1.0,1.0,0.5,1.0,envio_seguimiento
+q_envio,3,1.0,0.6666666666666666,1.0,1.0,envio_seguimiento
+q_envio,5,1.0,0.4,1.0,1.0,envio_seguimiento
+q_pago,1,1.0,1.0,1.0,1.0,pago_duplicado
+q_pago,3,1.0,0.3333333333333333,1.0,1.0,pago_duplicado
+q_pago,5,1.0,0.2,1.0,1.0,pago_duplicado
+q_devolucion,1,1.0,1.0,1.0,1.0,devolucion_plazo
+q_devolucion,3,1.0,0.3333333333333333,1.0,1.0,devolucion_plazo
+q_devolucion,5,1.0,0.2,1.0,1.0,devolucion_plazo

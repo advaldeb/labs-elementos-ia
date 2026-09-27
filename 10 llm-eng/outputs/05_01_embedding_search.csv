@@ -1,0 +1,5 @@
+consulta_id,metodo,top_1,hit_rate_at_3,similitud_top_1
+1,tfidf,envio_seguimiento,1.0,0.2568908819490467
+1,svd,envio_seguimiento,1.0,0.9961953266568374
+2,tfidf,envio_entrega,1.0,0.2833304688693642
+2,svd,envio_entrega,1.0,0.9637541498769858

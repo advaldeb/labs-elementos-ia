@@ -1,0 +1,2 @@
+route_accuracy,retrieval_hit_rate,schema_compliance,latency_mean_seconds,input_tokens_observed,output_tokens_observed,estimated_cost,failure_rate,tool_accuracy,llm_calls
+1.0,1.0,1.0,0.003112100025949379,False,False,,0.0,1.0,0

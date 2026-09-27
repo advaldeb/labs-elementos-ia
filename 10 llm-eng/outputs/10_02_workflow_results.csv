@@ -1,0 +1,7 @@
+request,ruta_esperada,ruta,status,answer,source_ids,schema_valid
+devolucion 30 dias,rag,rag,ok,"[devolucion_plazo] Puedes solicitar una devolucion durante 30 dias desde la entrega. El producto debe estar sin uso y conservar sus accesorios.
+[devolucion_reembolso] Una vez recibido e inspeccionado el producto devuelto, el reembolso se procesa al metodo de pago original. El banco puede tardar algunos dias en reflejarlo.
+[envio_seguimiento] Consulta el seguimiento del paquete con el codigo de rastreo enviado por correo. Si el estado no cambia durante varios dias, contacta a soporte.","['devolucion_plazo', 'devolucion_reembolso', 'envio_seguimiento']",True
+calcula 2 + 3,tool,tool,ok,2 + 3 = 5,[],True
+"hola, necesito ayuda",direct,direct,ok,"Recibí tu solicitud: hola, necesito ayuda",[],True
+consulta clima,tool,tool,ok,Santiago: 18 C y despejado (dato simulado).,[],True

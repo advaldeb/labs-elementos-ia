@@ -1,0 +1,4 @@
+id,request,expected_route,route,schema_valid,source_ids,latency_seconds,input_tokens,output_tokens,estimated_cost,error_type,route_match
+obs-1,devolucion 30 dias,rag,rag,True,"['devolucion_plazo', 'devolucion_reembolso', 'envio_seguimiento']",0.0025278000393882394,,,,,True
+obs-2,calcula 5 + 4,tool,tool,True,[],0.0019078999757766724,,,,,True
+obs-3,hola,direct,direct,True,[],0.00201189995277673,,,,,True

@@ -1,0 +1,2 @@
+tool_selection_accuracy,tool_execution_failure_rate,runs_no_completados,llamadas_totales,contexto_total_caracteres
+0.5,0.25,2,8,267

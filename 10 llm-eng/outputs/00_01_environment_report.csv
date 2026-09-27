@@ -1,0 +1,10 @@
+category,name,passed,detail
+package,pydantic,True,installed (2.11.7)
+package,langchain-core,True,installed (1.2.2)
+package,pandas,True,installed (2.2.2)
+package,numpy,True,installed (2.0.0)
+provider,ollama,False,model not configured
+provider,openai,False,model not configured
+credential,openai,False,credential not configured
+provider,anthropic,False,model not configured
+credential,anthropic,False,credential not configured

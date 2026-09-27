@@ -1,0 +1,7 @@
+consulta_id,estrategia,k,hit_rate,precision_at_k,recall_at_k,ranking_documentos
+q_envio,lexical,3,1.0,0.6666666666666666,1.0,"['envio_seguimiento', 'envio_entrega', 'devolucion_plazo']"
+q_envio,tfidf,3,1.0,0.6666666666666666,1.0,"['envio_seguimiento', 'envio_entrega', 'devolucion_plazo']"
+q_pago,lexical,3,1.0,0.3333333333333333,1.0,"['pago_duplicado', 'envio_seguimiento', 'envio_entrega']"
+q_pago,tfidf,3,1.0,0.3333333333333333,1.0,"['pago_duplicado', 'envio_seguimiento', 'envio_entrega']"
+q_devolucion,lexical,3,1.0,0.3333333333333333,1.0,"['devolucion_plazo', 'envio_seguimiento', 'envio_entrega']"
+q_devolucion,tfidf,3,1.0,0.3333333333333333,1.0,"['devolucion_plazo', 'envio_seguimiento', 'envio_entrega']"

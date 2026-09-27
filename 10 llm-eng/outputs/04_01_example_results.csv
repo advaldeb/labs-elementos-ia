@@ -1,0 +1,7 @@
+referencia,linea_base,candidato,acierto_base,acierto_candidato
+envios,envios,envios,True,True
+devoluciones,pagos,devoluciones,False,True
+pagos,pagos,pagos,True,True
+cambios,cambios,cambios,True,True
+envios,envios,pagos,True,False
+pagos,sin_clasificar,pagos,False,True

@@ -1,0 +1,15 @@
+version,palabras_aprox,prompt
+breve,22,"INSTRUCCION
+Clasifica la consulta de soporte.
+
+CONSULTA
+¿Cómo puedo devolver mi compra?
+
+Responde solo con una categoria: envios, devoluciones, pagos o cambios."
+explicita,34,"INSTRUCCION
+Identifica el motivo principal de la consulta. Elige la categoria que mejor coincida con la solicitud completa.
+
+CONSULTA
+¿Cómo puedo devolver mi compra?
+
+Responde solo con una categoria: envios, devoluciones, pagos o cambios."

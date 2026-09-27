@@ -1,0 +1,4 @@
+caso,valido,errores
+valido,True,0
+enum_desconocido,False,1
+campo_extra,False,1

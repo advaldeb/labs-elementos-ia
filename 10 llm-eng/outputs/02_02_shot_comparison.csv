@@ -1,0 +1,20 @@
+estrategia,ejemplos,palabras_aprox,prompt
+zero-shot,0,25,"Clasifica la consulta en una sola etiqueta: envios, devoluciones o pagos. Devuelve solo la etiqueta, en minusculas.
+
+Consulta: Pagué dos veces el mismo pedido.
+Etiqueta:"
+few-shot,3,48,"Clasifica la consulta en una sola etiqueta: envios, devoluciones o pagos. Devuelve solo la etiqueta, en minusculas.
+
+Ejemplos:
+
+Consulta: Mi paquete no ha llegado.
+Etiqueta: envios
+
+Consulta: Necesito devolver el artículo.
+Etiqueta: devoluciones
+
+Consulta: El cobro aparece duplicado.
+Etiqueta: pagos
+
+Consulta: Pagué dos veces el mismo pedido.
+Etiqueta:"

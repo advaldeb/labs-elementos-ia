@@ -1,0 +1,7 @@
+temperatura,top_p,entropia_bits,tokens_distintos,token_mas_frecuente,frecuencia_mayor
+0.4,1.0,0.7403620603407011,5,respuesta,0.8455
+1.0,1.0,1.706324571327718,5,respuesta,0.5525
+1.8,1.0,2.087710188758194,5,respuesta,0.403
+1.0,0.45,-0.0,1,respuesta,1.0
+1.0,0.75,0.9167672122021793,2,respuesta,0.6795
+1.0,1.0,1.706324571327718,5,respuesta,0.5525

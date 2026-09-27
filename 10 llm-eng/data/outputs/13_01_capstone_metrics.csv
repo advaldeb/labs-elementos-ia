@@ -1,0 +1,2 @@
+route_accuracy,response_quality_mean,instruction_following_rate,retrieval_hit_rate,schema_compliance,latency_mean_seconds,input_tokens_observed,output_tokens_observed,estimated_cost_usd,pricing_rates_configured,failure_rate,tool_accuracy,model_calls
+1.0,1.0,1.0,1.0,1.0,0.0025455333137263856,False,False,,False,0.0,1.0,0

@@ -1,0 +1,8 @@
+{"id":"envio_seguimiento","tema":"envios","texto":"Consulta el seguimiento del paquete con el codigo de rastreo enviado por correo. Si el estado no cambia durante varios dias, contacta a soporte."}
+{"id":"envio_entrega","tema":"envios","texto":"Cuando el pedido aparece en reparto, la entrega suele completarse durante el dia. Revisa la direccion y las instrucciones de entrega de tu cuenta."}
+{"id":"devolucion_plazo","tema":"devoluciones","texto":"Puedes solicitar una devolucion durante 30 dias desde la entrega. El producto debe estar sin uso y conservar sus accesorios."}
+{"id":"devolucion_reembolso","tema":"devoluciones","texto":"Una vez recibido e inspeccionado el producto devuelto, el reembolso se procesa al metodo de pago original. El banco puede tardar algunos dias en reflejarlo."}
+{"id":"pago_duplicado","tema":"pagos","texto":"Si observas un cargo duplicado, comprueba primero si uno de los movimientos esta pendiente. Si ambos se confirman, envia el identificador del pedido a soporte."}
+{"id":"pago_pendiente","tema":"pagos","texto":"Un pago puede aparecer como pendiente mientras el banco autoriza la transaccion. No repitas la compra hasta confirmar si el primer intento fue rechazado."}
+{"id":"cuenta_contrasena","tema":"cuenta","texto":"Para restablecer la contrasena, solicita un enlace desde la pagina de inicio de sesion. El enlace caduca y solo debe abrirse desde el sitio oficial."}
+{"id":"cuenta_datos","tema":"cuenta","texto":"Puedes actualizar el correo y telefono en la configuracion de la cuenta. Algunos cambios requieren verificar la direccion nueva."}

@@ -1,0 +1,7 @@
+caso,estado,herramienta_esperada,herramienta_elegida,seleccion_correcta,llamadas,caracteres_observacion,fallos_ejecucion
+herramienta_equivocada,completed,clima_mock,busqueda_productos,False,1,2,0
+argumentos_invalidos,completed,clima_mock,clima_mock,True,1,55,1
+llamada_innecesaria,completed,,clima_mock,False,1,43,0
+bucle_repetido,repeated_call,calculadora,calculadora,True,1,9,0
+herramienta_inventada,unknown_tool,busqueda_documentos,buscar_en_internet,False,1,33,1
+historial_creciente,completed,clima_mock,clima_mock,True,3,125,0
