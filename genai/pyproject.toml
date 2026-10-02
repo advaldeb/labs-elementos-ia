@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "llm-engineering-labs"
+version = "0.1.0"
+description = "Laboratorios en español de ingeniería de sistemas con modelos de lenguaje."
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.7,<3",
+    "PyYAML>=6.0,<7",
+    "python-dotenv>=1.0,<2",
+    "numpy>=1.26,<3",
+    "pandas>=2.2,<4",
+    "matplotlib>=3.8,<4",
+    "scikit-learn>=1.4,<2",
+    "jupyterlab>=4.2,<5",
+    "ipykernel>=6.29,<8",
+    "langchain-core>=0.3,<2",
+    "langchain-ollama>=0.3,<2",
+    "langchain-openai>=0.3,<2",
+    "langchain-anthropic>=0.3,<2",
+    "langgraph>=0.2,<2",
+    "langsmith>=0.1,<1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<9"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

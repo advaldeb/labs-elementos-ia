@@ -1,0 +1,4 @@
+proveedor,modelo,requiere_clave,requiere_servicio_local
+anthropic,claude-3-5-sonnet-latest,True,False
+ollama,llama3.2,False,True
+openai,gpt-4o-mini,True,False

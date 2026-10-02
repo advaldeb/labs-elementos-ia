@@ -1,0 +1,4 @@
+max_intentos,intentos_consumidos,schema_valid,error_final,llamadas_reales
+1,1,False,json_invalid,0
+2,2,False,less_than_equal,0
+3,3,True,,0

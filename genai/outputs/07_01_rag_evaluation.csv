@@ -1,0 +1,2 @@
+hit_rate_at_3,evidencia_correcta_recuperada,frase_referencia_en_respuesta,modo_generacion,llamadas_llm
+1.0,True,True,extractiva_local,0

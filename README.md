@@ -1,81 +1,116 @@
-# Machine Learning
+# Laboratorios de Elementos de IA
 
-Repositorio de apoyo para un curso universitario de Machine Learning. Reúne notebooks de Jupyter para estudiar aprendizaje no supervisado, reducción de dimensionalidad, regresión, modelos basados en árboles, series de tiempo y segmentación de clientes. El curso complementario de LLM Engineering se conserva en `10 llm-eng/`.
+Repositorio de apoyo para cursos prácticos de Inteligencia Artificial. El material actual se organiza en tres itinerarios: **Machine Learning**, **Deep Learning** e **Ingeniería de sistemas con modelos de lenguaje (LLM Engineering)**. Las explicaciones docentes están principalmente en español; archivos, módulos y nombres de código usan inglés.
 
-## Objetivos del curso
+## Cursos
 
-- Comprender y comparar familias de métodos de aprendizaje automático.
-- Diseñar flujos de análisis reproducibles desde los datos hasta la evaluación.
-- Interpretar resultados y reconocer supuestos, limitaciones y riesgos de cada método.
-- Practicar experimentación computacional con Python y Jupyter.
+### Machine Learning
 
-## Resultados de aprendizaje
+[Abrir el curso](machine_learning/README.md) · [Ruta de aprendizaje](machine_learning/docs/learning_path.md) · [Catálogo de datos](machine_learning/docs/datasets.md)
 
-Al finalizar, el estudiantado podrá seleccionar métodos acordes al problema, preparar datos sin introducir Data Leakage, ajustar y evaluar modelos con métricas apropiadas, interpretar resultados y comunicar conclusiones basadas en evidencia.
+El curso trabaja análisis no supervisado, reducción de dimensionalidad, modelos predictivos y series temporales con notebooks de Jupyter:
 
-## Contenidos
+- **Clustering:** K-Means, agrupamiento jerárquico y mezclas gaussianas.
+- **Reducción de dimensionalidad:** PCA y análisis factorial.
+- **Modelos lineales:** regresión lineal, Ridge, Lasso y Elastic Net.
+- **Árboles y ensembles:** árboles de regresión, random forest, gradient boosting y XGBoost.
+- **Series temporales:** regresiones espurias, modelos de rezagos distribuidos, Holt-Winters, ETS, Prophet, SARIMA y un notebook histórico de modelos estructurales.
+- **Segmentación de clientes:** análisis de perfiles y agrupamiento.
+- **Clasificación y selección de modelos:** carpetas preparadas para material futuro; todavía no contienen laboratorios implementados.
 
-1. [Clustering](notebooks/01_clustering/)
-2. [Reducción de dimensionalidad](notebooks/02_dimensionality_reduction/)
-3. [Modelos lineales](notebooks/03_linear_models/)
-4. [Modelos basados en árboles](notebooks/04_tree_based_models/)
-5. [Clasificación](notebooks/05_classification/) (módulo preparado para material futuro)
-6. [Series de tiempo](notebooks/06_time_series/)
-7. [Selección y evaluación de modelos](notebooks/07_model_selection/) (módulo preparado para material futuro)
-8. [Segmentación de clientes](notebooks/08_customer_segmentation/)
+La mayoría de los datos se centraliza en `machine_learning/data/`. Algunos recursos históricos están incompletos o faltan: el notebook de segmentación requiere un transcript que no está en el repositorio, y los ZIP legacy preservados están vacíos. Consulta el [informe de reorganización](REORGANIZATION_REPORT.md) antes de asumir que todos los notebooks pueden ejecutarse sin ajustes.
 
-## Estructura del repositorio
+### Deep Learning
 
-- `notebooks/`: material de clase, agrupado por tema y numerado localmente.
-- `data/`: datos originales, procesados y externos; los datos no se ignoran en Git.
-- `src/`: utilidades Python reutilizables del curso, instalables como paquete.
-- `exercises/` y `solutions/`: espacios paralelos para actividades y soluciones docentes.
-- `tests/`: pruebas del código reutilizable de `src/`.
-- `docs/`: guía académica, ruta de aprendizaje, entorno, datasets y bibliografía.
-- `assets/`: imágenes, diagramas y figuras para el material docente.
-- `10 llm-eng/`: curso de LLM Engineering preservado como subproyecto independiente.
+[Abrir el curso](deep-learning/README.md)
+
+Veinte laboratorios progresan desde tensores, neuronas y una implementación MLP con NumPy hasta entrenamiento con PyTorch, regularización, visión por computador, redes recurrentes, atención y Transformers. El cierre integra comparación de modelos y análisis de errores.
+
+Los experimentos generan datos sintéticos localmente, fijan semillas y no requieren credenciales, pesos preentrenados ni descargas. Están diseñados para CPU; GPU es opcional. Cada notebook incluye ejercicios guiados, independientes y de desafío. Las claves docentes están separadas en `deep-learning/solutions/`.
+
+### LLM Engineering
+
+[Abrir el curso](llm-engineering/README.md)
+
+El itinerario abarca configuración de modelos, tokens y generación, ingeniería de prompts, salidas estructuradas con Pydantic, evaluación, embeddings, búsqueda semántica, recuperación, RAG, herramientas, agentes, LangGraph, observabilidad, RAG avanzado y un proyecto integrador.
+
+La mayoría de las prácticas puede trabajarse localmente con datos de ejemplo. La conexión con Ollama es opcional; los proveedores OpenAI y Anthropic requieren credenciales propias, y LangSmith es opcional. Las llamadas externas están sujetas a disponibilidad, costo y configuración.
+
+## Estructura principal
+
+```text
+machine_learning/   Curso de ML, datos, documentación, código y pruebas
+deep-learning/      20 laboratorios de redes neuronales y soluciones docentes
+llm-engineering/    Curso independiente de LLM, paquete, configuración y pruebas
+01 clustering/      Directorio histórico vacío
+03 regression/      Directorio histórico vacío
+06 time series/     Directorio histórico vacío
+notebooks/          Material histórico organizado parcialmente por tema
+LICENSE
+REORGANIZATION_REPORT.md
+```
+
+Las rutas canónicas para el material mantenido son las indicadas en cada curso; los directorios históricos de la raíz no sustituyen esos subproyectos.
 
 ## Instalación
 
-Se recomienda Python 3.11 o 3.12. Desde la raíz del repositorio, crea un entorno virtual y luego instala las dependencias:
+Se recomienda Python **3.11 o 3.12**. Cada curso mantiene sus propios manifiestos y puede requerir versiones o proveedores distintos; para evitar conflictos, crea un entorno virtual por subproyecto. Desde la raíz, para Machine Learning:
 
 ```powershell
-py -m venv .venv
-.venv\Scripts\Activate.ps1
+py -3.12 -m venv .venv-ml
+.venv-ml\Scripts\Activate.ps1
 python -m pip install --upgrade pip
+Set-Location machine_learning
 python -m pip install -r requirements.txt
 ```
 
-En macOS o Linux, activa el entorno con `source .venv/bin/activate`. El manifiesto incluye dependencias de los módulos ML y del subproyecto LLM; algunos proveedores de modelos requieren configuración adicional y servicios externos.
+Para Deep Learning, crea otro entorno virtual, actívalo y ejecuta desde la raíz:
 
-## Configuración del entorno
+```powershell
+py -3.12 -m venv .venv-dl
+.venv-dl\Scripts\Activate.ps1
+python -m pip install -r deep-learning/requirements.txt
+```
 
-Duplica `.env.example` como `.env` solo si usarás proveedores de LLM que requieren credenciales. Mantén las claves fuera de Git. Para detalles del entorno, consulta [docs/environment_setup.md](docs/environment_setup.md).
+Para LLM Engineering, crea un tercer entorno, actívalo y ejecuta la instalación editable desde su carpeta:
 
-## Ejecución de notebooks
+```powershell
+py -3.12 -m venv .venv-llm
+.venv-llm\Scripts\Activate.ps1
+Set-Location llm-engineering
+python -m pip install -e "[dev]"
+```
 
-Abre la raíz del repositorio en JupyterLab o Visual Studio Code, selecciona el kernel del entorno `.venv` y ejecuta las celdas en orden. Para que `ml_course` esté disponible, instala el proyecto con `python -m pip install -e .` (ya incluido en `requirements.txt`). Los loaders usan `pathlib` y resuelven los datos desde la raíz del proyecto, no desde el directorio de trabajo.
+En macOS o Linux, activa el entorno con `source .venv/bin/activate`. Deep Learning también puede instalarse como proyecto editable con `python -m pip install -e "deep-learning[dev]"`.
 
-## Datasets
+## Ejecución y validación
 
-El catálogo está en [data/README.md](data/README.md) y [docs/datasets.md](docs/datasets.md). Los archivos de `data/raw/` son entradas originales, `data/external/` conserva recursos de terceros y `data/processed/` se reserva para derivados. Algunos recursos originales están incompletos; las limitaciones conocidas están documentadas en el catálogo y en [REORGANIZATION_REPORT.md](REORGANIZATION_REPORT.md).
+Abre la raíz del repositorio en VS Code/Jupyter y selecciona el kernel del entorno correspondiente al curso. Ejecuta las celdas de cada notebook en orden. Los requisitos y las instrucciones específicas están en los README de [Machine Learning](machine_learning/README.md), [Deep Learning](deep-learning/README.md) y [LLM Engineering](llm-engineering/README.md).
+
+Pruebas disponibles:
+
+```powershell
+python -m pytest machine_learning/tests
+python -m pytest deep-learning/tests
+python -m pytest llm-engineering/tests
+```
+
+Ejecuta cada comando desde la raíz, con el entorno que tenga instaladas las dependencias de ese subproyecto.
+
+## Datos, credenciales y pesos
+
+- Machine Learning documenta sus datasets y limitaciones en [machine_learning/docs/datasets.md](machine_learning/docs/datasets.md). No des por disponibles los recursos legacy o externos sin revisar el catálogo.
+- Deep Learning genera ejemplos pequeños localmente; no incluye pesos ni datasets grandes.
+- LLM Engineering conserva el corpus sintético dentro de su subproyecto. Mantén las credenciales en un `.env` local a partir de `.env.example`; nunca publiques claves. Revisa los límites de costo y los datos enviados antes de activar proveedores remotos o trazas.
+- Los datasets grandes, secretos y pesos descargados no deben añadirse al control de versiones.
 
 ## Convenciones
 
-- Rutas técnicas y nombres de archivos en inglés; explicaciones pedagógicas en español.
-- Numeración local dentro de cada módulo.
-- No modificar directamente los datasets originales.
-- Mantener visibles en los notebooks los pasos relevantes para el aprendizaje; abstraer solo lógica claramente reutilizable.
-- Revisar [docs/datasets.md](docs/datasets.md) antes de asumir que un recurso de terceros está disponible.
-
-## Ruta de aprendizaje
-
-La progresión conceptual se describe en [docs/learning_path.md](docs/learning_path.md); la descripción académica completa está en [docs/course_overview.md](docs/course_overview.md).
-
-## Bibliografía
-
-La bibliografía recomendada y los recursos oficiales están centralizados en [docs/references.md](docs/references.md).
+- El material docente y sus interpretaciones se redactan en español; nombres de archivos, APIs y código permanecen en inglés.
+- Mantén visibles los mecanismos que se enseñan; extrae utilidades solo cuando la reutilización no oculte el aprendizaje.
+- Separa entrenamiento, validación y prueba cuando corresponda; reserva test para la evaluación final.
+- No inventes métricas: las conclusiones deben corresponder a salidas obtenidas al ejecutar los experimentos.
 
 ## Licencia
 
-Consulta [LICENSE](LICENSE).
+Consulta [LICENSE](LICENSE). Revisa además las licencias y procedencia de los datasets o servicios de terceros antes de redistribuir sus contenidos.

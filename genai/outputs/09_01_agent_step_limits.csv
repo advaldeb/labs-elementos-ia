@@ -1,0 +1,4 @@
+max_pasos,pasos_consumidos,completo,llamadas_herramienta
+1,1,False,1
+2,2,True,1
+4,2,True,1

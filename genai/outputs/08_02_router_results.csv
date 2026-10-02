@@ -1,0 +1,6 @@
+solicitud,esperada,seleccionada,argumentos_validos,error,acierto_router
+calcula 12 * 3,calculadora,calculadora,True,,True
+temperatura de Santiago,clima_mock,clima_mock,True,,True
+busca una mochila,busqueda_productos,busqueda_productos,True,,True
+donde esta mi paquete,busqueda_documentos,busqueda_documentos,True,,True
+hola,respuesta_directa,respuesta_directa,True,,True

@@ -1,0 +1,2 @@
+route_accuracy,failure_rate,latency_mean_seconds,input_tokens_available,output_tokens_available,cost_available
+1.0,0.0,0.005763133289292455,False,False,False

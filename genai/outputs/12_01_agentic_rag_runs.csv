@@ -1,0 +1,4 @@
+caso,route,status,generation_mode,llm_calls,attempts,grade_score,source_ids,query_history,hit_rate
+consulta_directa,rag,answered,extractive,0,1,1.0,['envio_seguimiento'],['seguimiento paquete'],1.0
+parafrasis,rag,answered,extractive,0,2,0.5,"['devolucion_plazo', 'devolucion_reembolso']","['quiero que me regresen el dinero', 'quiero que me regresen el dinero reembolso devolucion']",1.0
+sin_evidencia_y_sin_reintento,rag,abstained,none,0,1,0.0,[],['xyzzy qqqv'],

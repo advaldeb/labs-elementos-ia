@@ -1,0 +1,15 @@
+# Secretos y datos descargados
+.env
+.env.*
+data/raw/
+data/external/
+data/processed/
+
+# Pesos y checkpoints generados o descargados
+weights/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx

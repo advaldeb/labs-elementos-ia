@@ -1,0 +1,3 @@
+estrategia,hit_rate_at_3,precision_at_3,recall_at_3,mrr
+lexical,1.0,0.4444444444444444,1.0,1.0
+tfidf,1.0,0.4444444444444444,1.0,1.0

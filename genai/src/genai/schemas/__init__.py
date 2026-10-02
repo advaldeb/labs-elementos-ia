@@ -1,0 +1,1 @@
+"""Esquemas Pydantic para contratos entre modelos y aplicaciones."""

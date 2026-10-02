@@ -1,0 +1,16 @@
+paquete,version,estado
+pydantic,2.11.7,instalado
+PyYAML,6.0.3,instalado
+python-dotenv,1.0.1,instalado
+pandas,2.2.2,instalado
+numpy,2.0.0,instalado
+matplotlib,3.10.5,instalado
+scikit-learn,1.7.2,instalado
+jupyterlab,,ausente
+ipykernel,7.3.0,instalado
+langchain-core,1.2.2,instalado
+langchain-ollama,1.0.1,instalado
+langchain-openai,1.1.5,instalado
+langchain-anthropic,,ausente
+langgraph,,ausente
+langsmith,0.5.0,instalado
